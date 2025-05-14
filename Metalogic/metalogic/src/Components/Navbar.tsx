@@ -77,21 +77,21 @@ const companyDropdownItems: DropdownItem[] = [
 ];
 
   return (
- <div className="flex relative  py-1.5  border-b-1 z-20  items-center justify-between gap-2  px-2">
+ <div className="flex  sticky top-0  bg-navcolor text-white  py-1.5  border-b-1 border-blue-200 z-20  items-center justify-between gap-2  px-2">
     <div className="px-2">
-        <a href="#" className="text-xl text-blue-800 font-semibold">MetaLogic</a>
+        <a href="#" className="text-xl  font-semibold">MetaLogic</a>
     </div>
     <button  onClick={showMenu} className="md:hidden rounded-md hover:bg-slate-200  px-2 py-1 transition-all ease-in-out duration-300">
         {isOpen ?<X />:<Menu />}
     </button>
     <div className=" hidden  w-1/2  md:flex justify-center">
         <ul className="flex   gap-16   px-2 ">
-            <li className=" px-4 py-1 font-semibold hover:bg-slate-200 rounded-md duration-300 transition-colors">
+            <li className=" px-4 py-1 font-semibold hover:bg-blue-500 hover:bg-opacity-30 rounded-md duration-300 transition-colors">
                 <a href="#">Home</a>
             </li>
             <li className="realtive">
                <button onClick={subdrop}
-                className=" flex gap-1 rounded-md px-2 py-1 hover:bg-slate-200 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out transform  ">
+                className=" flex gap-1 rounded-md px-2 py-1 hover:bg-blue-500 hover:bg-opacity-30 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out transform  ">
                  <p className="font-semibold"> Services</p>
                 {dropmenu ? <ChevronUp/>:<ChevronDown />}
                </button>
@@ -112,13 +112,13 @@ const companyDropdownItems: DropdownItem[] = [
                 </div>
                )}
             </li>
-            <li className=" px-4 py-1 font-semibold hover:bg-slate-200 rounded-md duration-300 transition-colors">
+            <li className=" px-4 py-1 font-semibold hover:bg-blue-500 hover:bg-opacity-30 rounded-md duration-300 transition-colors">
                 <a href="#">Career</a>
             </li>
-            <li className=" px-4 py-1 font-semibold hover:bg-slate-200 rounded-md duration-300 transition-colors">
+            <li className=" px-4 py-1 font-semibold hover:bg-blue-500 hover:bg-opacity-30  rounded-md duration-300 transition-colors">
                 <a href="#">Blogs</a>
             </li>
-            <li className=" px-4 py-1 font-semibold hover:bg-slate-200 rounded-md duration-300 transition-colors">
+            <li className=" px-4 py-1 font-semibold hover:bg-blue-500 hover:bg-opacity-30 rounded-md duration-300 transition-colors">
                 <a href="#">About Us</a>
             </li>
         </ul>

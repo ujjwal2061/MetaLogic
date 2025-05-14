@@ -5,9 +5,10 @@ interface ContextProps{
 }
 const Screen=({children}:ContextProps)=>{
     return(
-        <div className="min-h-screen">
+        <>
           {children}
-        </div>
+        </>
+    
     )
 }
 export default Screen;

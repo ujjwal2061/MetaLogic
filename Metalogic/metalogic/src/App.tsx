@@ -4,6 +4,7 @@ import Hero from "./Components/Hero"
 import Footer from "./Components/Footer"
 import Card from "./Components/Card"
 import Second from "./Components/second"
+import CardFlip from "./Components/Cardflip"
 const App=()=>{
   return(
    <Screen>
@@ -11,6 +12,7 @@ const App=()=>{
      <Hero />
      <Card />
      <Second />
+     <CardFlip />
     <Footer/>
    </Screen>
    

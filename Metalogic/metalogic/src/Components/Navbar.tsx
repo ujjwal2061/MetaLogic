@@ -86,7 +86,7 @@ const companyDropdownItems: DropdownItem[] = [
     </button>
     <div className=" hidden  w-1/2  md:flex justify-center">
         <ul className="flex   gap-16   px-2 ">
-            <li className=" px-4 py-1 font-semibold hover:bg-blue-500 hover:bg-opacity-30 rounded-md duration-300 transition-colors">
+            <li className="    px-4 py-1 font-semibold hover:bg-blue-500 hover:bg-opacity-30 rounded-md duration-300 transition-colors">
                 <a href="#">Home</a>
             </li>
             <li className="realtive">
@@ -127,10 +127,10 @@ const companyDropdownItems: DropdownItem[] = [
       <button className="rounded-lg px-2 py-2 font-semibold  transition-all duration-300 ease-in-out  bg-red-500 text-white  hover:bg-red-400">Get in Touch</button>
     </div>
     {isOpen && (
-        <div className={`md:hidden fixed  font-semibold bg-slate-100 left-0 top-10 items-center justify-center w-full md:w-64 px-2  flex py-1  h-full  ${menubar ?"":""}`}>
+        <div className={`md:hidden fixed  font-semibold text-black bg-slate-100 left-0 top-10 items-center justify-center w-full md:w-64 px-2  flex py-1  h-full  ${menubar ?"":""}`}>
          <ul className="flex items-center justify-center  flex-col gap-10  px-2 ">
-            <li>
-                <a href="#">Home</a>
+            <li className=" ">
+                <a href="#" className="hover:border-b-2 transition-all ease-in-out border-red-500 hover:translate-x-0 duration-400 ">Home</a>
             </li>
               <li className="">
                <button  
@@ -158,13 +158,13 @@ const companyDropdownItems: DropdownItem[] = [
 )}
          </li>
             <li>
-                <a href="#">Career</a>
+              <a href="#" className="hover:border-b-2 transition-all ease-in-out border-red-500 hover:translate-x-0 duration-400">Career</a>
             </li>
             <li>
-                <a href="#">Blogs</a>
+              <a href="#" className="hover:border-b-2 transition-all ease-in-out border-red-500 hover:translate-x-0 duration-400">Blogs</a>
             </li>
             <li>
-                <a href="#">About Us</a>
+                <a href="#" className="hover:border-b-2 transition-all ease-in-out border-red-500 hover:translate-x-0 duration-400">About Us</a>
             </li>
         </ul>
         </div>

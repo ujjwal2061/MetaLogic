@@ -30,3 +30,22 @@
 .flip-card-back {
   transform: rotateY(180deg);
 }
+/* In your CSS file */
+.cursor-dot {
+  background-color: rgba(50, 33, 102, 0.5);
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1px);
+  transition: all 0.2s ease;
+}
+
+.cursor-dot:hover {
+  backdrop-filter: blur(0px);
+  transform: scale(1.3);
+}

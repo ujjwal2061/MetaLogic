@@ -90,7 +90,7 @@ const childVariants = {
       whileHover="hover" 
       onMouseEnter={textEnter} onMouseLeave={textLeave}
       className="flex  items-center
-       sm:text-3xl md:text-4xl text-[19px] font-semibold 
+       sm:text-3xl md:text-4xl text-[14px] font-semibold 
        ">
         {splitText(text).map((cha ,idx)=>(
           <motion.span
@@ -169,7 +169,7 @@ const childVariants = {
    variants={staggerContainer}
       initial="hidden"
       animate="show"
-   className=" hidden sm:flex flex-col sm:flex-row p-2 justify-center items-end gap-6 sm:gap-10 w-full relative">
+   className="  lg:px-16  hidden sm:flex flex-col sm:flex-row p-2 justify-center items-end gap-6 sm:gap-10 w-full relative">
   {/*First Div*/}
   <motion.div 
    variants={childVariants}

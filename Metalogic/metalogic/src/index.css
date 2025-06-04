@@ -45,7 +45,4 @@
   transition: all 0.2s ease;
 }
 
-.cursor-dot:hover {
-  backdrop-filter: blur(0px);
-  transform: scale(1.3);
-}
+

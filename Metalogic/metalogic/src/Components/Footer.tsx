@@ -1,9 +1,17 @@
 import { CircleCheck,Phone,Mail,MapPin } from 'lucide-react';
+import {  motion} from "motion/react"
 const Footer=()=>{
+  //
+
  return (
-    <footer className="w-full min-h-screen  mt-2 py-12 flex flex-col ">
-        <div className=" ">
-            <div className="py-6 px-3 z-20 gap-6  flex flex-col items-center justify-center">
+    <footer 
+    className="w-full min-h-screen  mt-2 py-12 flex flex-col ">
+        <div>
+            <motion.div
+             initial={{ opacity:0,y:10  }}
+             whileInView={{y:0, opacity:1, filter:"blur(0px)" }}
+             transition={{ duration:0.6,  delay:0.1, ease:'easeInOut' }}
+             className="py-6 px-3 z-20 gap-6  flex flex-col items-center justify-center">
                 <h1 className="text-3xl  font-semibold font-serif">Get In Touch With Our Team</h1>
                 <form className=" flex  flex-col  gap-6 p-4  w-full  md:w-1/2  bg-gradient-to-r from-primarycolor-500/50 via-primarycolor-600/20  to-primarycolor-500 rounded-lg">
                  <div className="flex  flex-col  md:flex-row gap-2 ">
@@ -39,15 +47,22 @@ const Footer=()=>{
                      <span className="text-[14px] font-serif ">Submit</span>
                   </button>
                 </form>
-            </div>
-         <div className="flex p-2  w-full items-center justify-center">
+            </motion.div>
+         <motion.div
+            initial={{ opacity:0,y:10  }}
+             whileInView={{y:0, opacity:1, filter:"blur(0px)" }}
+             transition={{ duration:0.6,  delay:0.1, ease:'easeInOut' }}
+            className="flex p-2  w-full items-center justify-center">
              <div className="flex flex-col justify-center items-center gap-2 ">
               <span className="rounded-2xl px-4 py-2  border-1 font-medium">Pricing</span>
                <h1 className="md:text-6xl  text-4xl font-medium text-center ">Revolutionize Your E-Commerce <br /> Business with</h1>
                <p className="text-[12px]  font-semibold py-2">Cutting-edge solutions designed to boost sales, streamline operations, and enhance customer experience.</p>
              </div>    
-          </div>      
-    <div className="flex md:flex-row  justify-center flex-col py-3  px-5  cursor-pointer gap-4  ">
+          </motion.div>      
+    <motion.div
+             initial={{ opacity:0,y:10  }}
+             whileInView={{y:0, opacity:1, filter:"blur(0px)" }}
+             transition={{ duration:0.6,  delay:0.1, ease:'easeInOut' }} className="flex md:flex-row  justify-center flex-col py-3  px-5  cursor-pointer gap-4  ">
       <div className="p-2  md:w-72  w-full flex flex-col rounded-xl bg-primarycolor-500/70">
         <div className="flex flex-col gap-2 items-start ">
           <div className="p-2 ">
@@ -111,8 +126,11 @@ const Footer=()=>{
           </div>
         </div>
       </div>
-    </div>
-    <div className='w-full  flex flex-col items-center gap-6  justify-center px-8 py-12  bg-gradient-to-tr from-primarycolor-800 via-primarycolor-600 to-primarycolor-500/50 '>
+    </motion.div>
+    <motion.div 
+             initial={{ opacity:0,y:10  }}
+             whileInView={{y:0, opacity:1, filter:"blur(0px)" }}
+             transition={{ duration:0.6,  delay:0.1, ease:'easeInOut' }} className='w-full  flex flex-col items-center gap-6  justify-center px-8 py-12  bg-gradient-to-tr from-primarycolor-800 via-primarycolor-600 to-primarycolor-500/50 '>
       <div className='  bg-primarycolor-500  md:w-1/2 shadow-lg   w-full p-6 flex flex-col  gap-3 justify-center items-center  rounded-3xl'>
         <span className='rounded-2xl px-3 py-1 border-1'>Secure ,Fast and Flexible</span>
         <p className='md:text-4xl sm:text-2xl text-xl   text-center font-semibold '>Take The Next Step Towards Cloud <br />
@@ -125,8 +143,11 @@ const Footer=()=>{
       <div className='w-full p-1 flex justify-center'>
       <h1 className='lg:text-8xl sm:text-6xl  text-2xl font-semibold '>Power Your Business</h1>
       </div>
-    </div>
-    <div className='flex md:flex-row flex-col justify-between gap-6 p-2  '>
+    </motion.div>
+    <motion.div
+             initial={{ opacity:0,y:10  }}
+             whileInView={{y:0, opacity:1, filter:"blur(0px)" }}
+             transition={{ duration:0.6,  delay:0.1, ease:'easeInOut' }} className='flex md:flex-row flex-col justify-between gap-6 p-2  '>
       <div className='px-5 py-2  flex flex-col gap-3'>
         <h1 className="text-4xl font-bold">MeatLogic</h1>
         <p className='text-2xl font-semibold'>Elevate Your Brand</p>
@@ -146,7 +167,7 @@ const Footer=()=>{
           <li className='flex gap-2 items-center'><Mail />Metalogic@gmail.com</li>
         </div>
       </div>
-    </div>
+    </motion.div>
     <div className="flex flex-col  items-center  px-5 mt-6">
      <hr className="w-full md:w-1/2 border-gray-300 mb-2" />
      <p className="text-sm text-gray-500">&copy; 2025 MeatLogic. All rights reserved.</p>

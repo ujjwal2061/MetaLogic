@@ -1,6 +1,7 @@
 import Header from "./Components/Header"
 import Hero from "./Components/Hero"
 import Section from "./Components/Section"
+import Footer from "./Components/Footer"
 // import { useEffect } from "react"
 
 // useEffect(()=>{
@@ -15,6 +16,7 @@ const App=()=>{
     </div>
     <Hero />
     <Section />
+    <Footer />
    </main>
   )
 }

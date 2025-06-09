@@ -57,7 +57,9 @@ export default {
           "800": "#140a34",
           "900": "#0a051a"
         },
-        "smalldiv":"rgb(18,19,18)"
+        "smalldiv":"rgb(18,19,18)",
+        "secondarycolor":"rgb(218, 165, 32)",
+        "button":"rgb(234,235,235)"
       }
     },
   },

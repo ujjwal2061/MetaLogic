@@ -1,36 +1,25 @@
-# 🚀 Flip Card Web App
+# 🛠️ MeatLogic – From Incomplete Exam Project to Skill Showcase
 
-A sleek, responsive service showcase web app built using **React (with TypeScript)**, styled with **Tailwind CSS**, and animated using **Framer Motion**. This app features interactive flip cards to highlight service offerings in a modern and engaging layout.
+I couldn’t complete this project during my **End Semester exam** due to time limitations.  
+But I didn’t leave it behind.
 
----
+After the exams, I returned to it and used the opportunity to:
+- ✅ Practice and improve my frontend development skills
+- 🎨 Add better styles, color gradients, and UI polish
+- 🌀 Implement animations and transitions
+- 💻 Make it responsive across devices
 
-## 🌟 Features
-
-- 🃏 Interactive Flip Cards with hover animations
-- 📱 Mobile-first responsive layout
-- 🎨 Clean, modern UI with Tailwind CSS
-- ⚡ Smooth transitions powered by Framer Motion
-- 💡 Semantic and accessible component structure
-- 🔧 Easy to extend with additional cards or content sections
+This repo reflects my learning journey — from incomplete assignment to a cleaner, better project that shows what I can now build.
 
 ---
 
-## 🛠️ Tech Stack
+## 💻 Built With
+- React.js
+- Tailwind CSS
+- Heroicons / Lucide
+- Vite (if used)
 
-| Technology       | Description                              |
-|------------------|------------------------------------------|
-| **React**        | Frontend library for building UI         |
-| **TypeScript**   | Strongly typed JavaScript                |
-| **Tailwind CSS** | Utility-first CSS framework              |
-| **Framer Motion**| Declarative animation library for React  |
-
----
-
-## 📁 Folder Structure
-src/
-├── components/
-│ └── CardFlip.tsx # Main Flip Card Section
-├── App.tsx # Root component
-├── index.css # TailwindCSS and custom flip animation styles
-├── main.tsx # Entry point
-
+## 🚀 Setup
+```bash
+npm install
+npm run dev
